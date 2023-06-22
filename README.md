@@ -20,7 +20,7 @@ Visit this website:
 This is all you need to understand what you need to manage your company and understand what your employees salaries are and what their responsibilities are. When your employees are promoted, you will be informed of their new responsibilities and their new salary and the department in which they work in.
 
 ## Installation
-  Visit README site above
+  Click on the link to the website above to visit this site
 
 ## Questions
   Please reach me at tod.winchester@gmail.com for any questions related to the project.
