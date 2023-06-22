@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Chesster14/EE-Employee/issues"
   },
-  "homepage": "https://github.com/Chesster14/EE-Employee#readme"
+  "homepage": "https://github.com/Chesster14/EE-Employee#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
