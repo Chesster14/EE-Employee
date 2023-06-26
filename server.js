@@ -8,11 +8,11 @@ inquirer
     type: "list", 
     name: "nextAction", 
     message: "hello user what do you want to do today",
-    choices: ["view all employees", "view all roles", "view all departments"]
+    choices: ["view all employees", "view all roles", "view all departments", "add a department", "add a role", "add an employee", "update an emloyee role"]
     }
    ])
   .then((answers) => {
-    // Instead of loggint this to the console, you want to analyze what the user has selected, and perform some action
+    // Instead of logging this to the console, you want to analyze what the user has selected, and perform some action
     // based on that selection. For instance, if the user selected "view all employees", then you need to run a function
     // that executes a specific SQL command to select all employees from the employee data table.
     // call your sql instance with the corresponding function
