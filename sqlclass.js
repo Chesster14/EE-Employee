@@ -12,6 +12,9 @@
 // at the very bottom of this file, you create an instance of that class, and export it!
 
 
+
+
+// Do not use anything below this, this is just a copy of a presentation number
 // DROP DATABASE IF EXISTS registrar_db;
 // CREATE DATABASE registrar_db;
 

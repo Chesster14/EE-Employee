@@ -1,31 +1,73 @@
-const inquirer = require('inquirer');
+console.log('here');
+const inquirer = require("inquirer");
 // import the instance of your class here
-// const mySqlInstance = require('./sqlclass');
+const mysql = require("mysql2");
+
+// create a connection to my database
+// const connection = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   database: "test",
+// });
+
+function viewAllEmployees() {
+  const getEmployees = "SELECT * FROM employee";
+  // query the database with the sql command on the line above
+  connection.query(getEmployees, function (err, results, fields) {
+    console.log(results); // results contains rows returned by server
+  });
+}
 
 inquirer
   .prompt([
     {
-    type: "list", 
-    name: "nextAction", 
-    message: "hello user what do you want to do today",
-    choices: ["view all employees", "view all roles", "view all departments", "add a department", "add a role", "add an employee", "update an emloyee role"]
+      type: "list",
+      name: "nextAction",
+      message: "hello user what do you want to do today",
+      choices: [
+        "view all employees",
+        "view all roles",
+        "view all departments",
+        "add a department",
+        "add a role",
+        "add an employee",
+        "update an employee role"
+      ],
     }
-   ])
+  ])
   .then((answers) => {
-    // Instead of logging this to the console, you want to analyze what the user has selected, and perform some action
-    // based on that selection. For instance, if the user selected "view all employees", then you need to run a function
-    // that executes a specific SQL command to select all employees from the employee data table.
-    // call your sql instance with the corresponding function
-    // if (answers.nextAction == "view all employees") {
-        //const dbQuery = mysqlInstance.retrieveAllEmployees();
-    //}
 
-    console.log(answers);
+    const { nextAction } = answers;
 
-    // Use user feedback for... whatever!!
-    const {nextAction} = answers;
+    // switch (nextAction) {
+    //   case "view all employees":
+    //     // run the function that you defined above, here
+    //     viewAllEmployees();
+    //     break;
+    //     console.log("1");
+    //   case "view all departments":
+    //     console.log("view all departments");
+    //     break;
+    //   case "add a department":
+    //     console.log("add a department");
+    //     break;
+    //   case "view all roles":
+    //     console.log("view all roles");
+    //     break;
+    //   case "add a role":
+    //     console.log("add a role");
+    //     break;
+    //   case "add an employee":
+    //     console.log("add an employee");
+    //     break;
+    //   case "update an emloyee role":
+    //     console.log("update an emloyee role");
+    //     break;
+    //   default:
+    //     break;
+    // }
 
-    console.log("user selected" + nextAction);
+    console.log("nextAction is", nextAction);
   })
   .catch((error) => {
     if (error.isTtyError) {
