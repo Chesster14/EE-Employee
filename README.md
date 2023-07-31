@@ -1,12 +1,12 @@
 # EE-Employee
 Motivation for Promotion
-
-![License: MIT](https://custom-icon-badges.demolab.com/badge/license-MIT-yellowgreen.svg?logo=law)
+(Add a paragraph here)
 
 ![Google](https://custom-icon-badges.demolab.com/badge/Google-grey?logo=google&logoColor=red)(https://www.google.com/)
 
 Visit this website:
 
+Add url here
 
 ## Table of Contents:
 
