@@ -1,7 +1,8 @@
 # EE-Employee
 
 Motivation for Promotion
-(Add a paragraph here)
+
+A great way to challenge yourself to improve in your career is by working toward and receiving a promotion. It will give you direction in your life.  Getting a promotion typically means your supervisor notices your impressive performance and believes you're ready to accomplish more complex tasks, projects and responsibilities.
 
 ![Google](https://custom-icon-badges.demolab.com/badge/Google-grey?logo=google&logoColor=red)(https://www.google.com/)
 
